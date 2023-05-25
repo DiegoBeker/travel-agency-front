@@ -1,9 +1,9 @@
 import { CityCard } from "./style";
 
-export default function City({ name, picture }) {
+export default function City({city,visitCity}) {
     return(
-        <CityCard picture={picture}>
-            <h3>{name}</h3>
+        <CityCard picture={city.picture} onClick={()=>visitCity(city.name,city.id)}>
+            <h3>{city.name}</h3>
         </CityCard>
     );
 };

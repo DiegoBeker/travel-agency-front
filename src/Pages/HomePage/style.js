@@ -16,19 +16,20 @@ export const Step = styled.div`
     width: 300px;
     height: 80px;
     margin: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
-    background-color: gray;
+    background-color: blueviolet;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 `;
 
 export const CitiesContainer = styled.section`
     margin: 50px 0;
     padding: 10px;
-    border: 1px solid gray;
-    width: 100%;
+    border: 1px solid blueviolet;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
 `;

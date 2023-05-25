@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const HeaderContainer = styled.header`
-    height: 100px;
+    height: 80px;
     padding: 10px 20px;
     background-color: blueviolet;
     display: flex;
@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header`
 export const Logo = styled.div`
     display: flex;
     align-items: center;
-    font-size: 40px;
+    font-size: 36px;
     color: white;
     h1{
         font-weight: 700;
