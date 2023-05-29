@@ -12,7 +12,6 @@ export default function HomePage() {
     useEffect(()=>{
         axios.get(`${process.env.REACT_APP_API_URL}/cities`)
             .then((response)=> {
-                console.log(response.data);
                 setCities(response.data);
             })
             .catch((err) => console.log(err))

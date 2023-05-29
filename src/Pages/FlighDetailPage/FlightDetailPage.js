@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -8,6 +8,7 @@ import dayjs from "dayjs";
 export default function FlightDetailPage() {
     const {id} = useParams();
     const [flight, setFlight] = useState({});
+    const navigate = useNavigate();
     const date = dayjs(flight.departure_time).format("DD/MM/YYYY");
     const departureTime = dayjs(flight.departure_time).format("HH:mm");
     const arrivalTime = dayjs(flight.arrival_time).format("HH:mm");
@@ -34,6 +35,7 @@ export default function FlightDetailPage() {
                     <li>Horário previsto de chegada: {arrivalTime}</li>
                     <li>Preço: R$ {(flight.price/100).toFixed(2)}</li>
                 </Details>
+                <button onClick={()=>navigate(`/hotels/${flight.to_city}`)}>Ver Hospedagens</button>
             </Content>
         </PageContainer>
     );
