@@ -8,6 +8,18 @@ export const Filters = styled.div`
     width:300px;
     height: calc(100vh - 80px);
     border-right: 1px solid blueviolet;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    button{
+        background-color: blueviolet;
+        margin: 10px;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 5px;
+    }
 `;
 
 export const Flightscontainer = styled.ul`

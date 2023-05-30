@@ -18,6 +18,16 @@ export const Filters = styled.div`
     width:300px;
     height: calc(100vh - 80px);
     border-right: 1px solid blueviolet;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .7);
+    display: flex;
+    flex-direction: column;
+    button{
+        margin: 10px 0;
+        background-color: blueviolet;
+        border-radius:5px;
+        color: white;
+    }
 `;
 
 export const Hotelscontainer = styled.ul`

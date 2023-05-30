@@ -26,6 +26,7 @@ export const Content = styled.section`
 `;
 
 export const Details = styled.ul`
+    background-color: rgba(255,255,255, 0.7);
     li{
         margin: 10px 0;
         font-size: 18px;

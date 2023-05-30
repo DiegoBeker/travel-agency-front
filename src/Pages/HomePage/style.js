@@ -28,7 +28,6 @@ export const Step = styled.div`
 export const CitiesContainer = styled.section`
     margin: 50px 0;
     padding: 10px;
-    border: 1px solid blueviolet;
     width: 80%;
     display: flex;
     justify-content: space-evenly;

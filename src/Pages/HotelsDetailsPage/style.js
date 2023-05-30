@@ -40,6 +40,7 @@ export const PicturesContainer = styled.div`
     padding: 20px;
     border: 1px solid blueviolet;
     overflow-x: scroll;
+    background-color: rgba(255, 255, 255, .7);
     img{
         height: 200px;
         width:  200px;
@@ -52,6 +53,7 @@ export const InfoContainer = styled.div`
     height: 300px;
     padding: 20px;
     border: 1px solid blueviolet;
+    background-color: rgba(255, 255, 255, .7);
 `;
 
 export const AmenitiesContainer = styled.div`
@@ -59,6 +61,7 @@ export const AmenitiesContainer = styled.div`
     height: 300px;
     padding: 20px;
     border: 1px solid blueviolet;
+    background-color: rgba(255, 255, 255, .7);
 `;
 
 export const HotelContent = styled.div`

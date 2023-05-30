@@ -10,6 +10,7 @@ export const HotelCard = styled.li`
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     img{
         width: 200px;
         height: 250px;

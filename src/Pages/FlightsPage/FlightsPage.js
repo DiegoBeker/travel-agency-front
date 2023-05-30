@@ -25,7 +25,13 @@ export default function FlightsPage() {
         <PageContainer>
             <Header />
             <Content>
-                <Filters />
+                <Filters>
+                    <label>Preço Mínimo</label>
+                    <input type="text"></input>
+                    <label>Preço Máximo</label>
+                    <input type="text"></input>
+                    <button>Aplicar</button>
+                </Filters>
                 <Flightscontainer>
                     <h2>Passagens para {cityName}</h2>
                     {flights.map((f) => <Flight key={f.id} flight={f} viewDetails={viewDetails} />)}

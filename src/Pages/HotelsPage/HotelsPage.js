@@ -28,7 +28,14 @@ export default function HotelsPage() {
         <PageContainer>
             <Header />
             <Content>
-                <Filters />
+                <Filters>
+                    <label>Preço Mínimo</label>
+                    <input type="text"></input>
+                    <label>Preço Máximo</label>
+                    <input type="text"></input>
+                    <button>Aplicar</button>
+                </Filters>
+
                 <RightContent>
                     <h2>Hospedagens em {cityName}</h2>
                     <Hotelscontainer>
