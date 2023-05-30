@@ -16,7 +16,7 @@ export const Content = styled.section`
     align-items: center;
     button{
         height: 50px;
-        margin: 30px 0;
+        margin: 10px 0;
         background-color: blueviolet;
         border-radius: 5px;
         color: white;

@@ -18,7 +18,7 @@ export default function FlightsPage() {
     }, []);
 
     function viewDetails(id){
-        navigate(`/flights/${id}`);
+        navigate(`/flights/${cityId}/${id}`);
     }
 
     return (

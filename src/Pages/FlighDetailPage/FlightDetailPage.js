@@ -6,7 +6,7 @@ import { Content, Details, PageContainer } from "./style";
 import dayjs from "dayjs";
 
 export default function FlightDetailPage() {
-    const {id} = useParams();
+    const {cityId,id} = useParams();
     const [flight, setFlight] = useState({});
     const navigate = useNavigate();
     const date = dayjs(flight.departure_time).format("DD/MM/YYYY");
@@ -36,6 +36,7 @@ export default function FlightDetailPage() {
                     <li>Preço: R$ {(flight.price/100).toFixed(2)}</li>
                 </Details>
                 <button onClick={()=>navigate(`/hotels/${flight.to_city}`)}>Ver Hospedagens</button>
+                <button onClick={()=>navigate(`/flights/to/${flight.to_city}/${cityId}`)}>Voltar</button>
             </Content>
         </PageContainer>
     );

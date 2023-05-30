@@ -23,6 +23,14 @@ export const Content = styled.section`
     li{
         margin: 8px 0;
     }
+    button{
+        background-color: blueviolet;
+        margin: 10px;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 5px;
+    }
 `;
 
 export const PicturesContainer = styled.div`
